@@ -1,0 +1,20 @@
+{
+  "name": "dsh-otel",
+  "version": "0.1.0",
+  "description": "Export dsh-token-audit JSON summaries as OTLP/JSON metrics for DeepSeek Harness cost and token observability. Summary metrics only; no network.",
+  "type": "module",
+  "bin": { "dsh-otel": "bin/dsh-otel.mjs" },
+  "exports": {
+    ".": "./plugin/index.js",
+    "./otlp": "./src/otlp.mjs",
+    "./plugin": "./plugin/index.js",
+    "./icon": "./icon.svg"
+  },
+  "files": ["bin", "src", "plugin", "skills", "icon.svg", "README.md", "NOTICE.md", "LICENSE"],
+  "dsh": { "bundle": { "patch": "./plugin/cordis.patch.yml" } },
+  "engines": { "node": ">=20" },
+  "keywords": ["dsh", "deepseek-harness", "otel", "opentelemetry", "observability", "cost"],
+  "license": "MIT",
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "repository": { "type": "git", "url": "https://github.com/lengrufeng2008/dsh-otel" }
+}
