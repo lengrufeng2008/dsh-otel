@@ -1,0 +1,6 @@
+{
+  "generatedAt": "2026-11-01T00:00:00.000Z",
+  "window": { "days": 7 },
+  "totals": { "sessions": 3, "calls": 42, "hit": 1000, "miss": 200, "out": 300, "cost": 1.23, "peakCost": 0.4, "idleCost": 0.8, "projectedMonthly": 5.2 },
+  "byModel": [["deepseek-flash", { "calls": 42, "cost": 1.23, "out": 300 }]]
+}
